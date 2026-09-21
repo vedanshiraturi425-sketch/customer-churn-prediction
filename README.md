@@ -10,13 +10,11 @@ Predicting which telecom customers are likely to cancel their service, using the
 - Trained and compared Logistic Regression, Random Forest and XGBoost, with and without PCA
 
 ## Results (20% held-out test set)
-
-| Model | Accuracy | Recall | F1 | ROC-AUC |
-|---|---|---|---|---|
-| Logistic Regression | 0.803 | 0.572 | 0.607 | 0.836 |
-| Random Forest | 0.790 | 0.519 | 0.567 | 0.816 |
-| XGBoost | 0.771 | 0.527 | 0.550 | 0.811 |
-
+| Model | Accuracy | Precision | Recall | F1 | ROC-AUC |
+|---|---|---|---|---|---|
+| Logistic Regression | 0.803 | 0.647 | 0.572 | 0.607 | 0.836 |
+| Random Forest | 0.790 | 0.626 | 0.519 | 0.567 | 0.816 |
+| XGBoost | 0.771 | 0.576 | 0.527 | 0.550 | 0.811 |
 With PCA applied, accuracy dropped slightly (LR 0.787, RF 0.770, XGB 0.762), which is expected since PCA rotates features in a way tree-based models don't benefit from.
 
 ## Note on accuracy
