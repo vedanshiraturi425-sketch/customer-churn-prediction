@@ -17,7 +17,7 @@ Predicting which telecom customers are likely to cancel their service, using the
 | XGBoost | 0.771 | 0.576 | 0.527 | 0.550 | 0.811 |
 
 With PCA applied, accuracy dropped slightly (LR 0.787, RF 0.770, XGB 0.762), which is expected since PCA rotates features in a way tree-based models don't benefit from.
-With PCA applied, accuracy dropped slightly (LR 0.787, RF 0.770, XGB 0.762), which is expected since PCA rotates features in a way tree-based models don't benefit from.
+
 
 ## Note on accuracy
 About 73% of customers don't churn, so a model that always predicts "no churn" scores 73%. Recall and ROC-AUC are the more meaningful metrics here, since missing a churner costs more than a false alarm.
